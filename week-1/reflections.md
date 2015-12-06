@@ -44,7 +44,7 @@ less : Go back a page?
 rmdir: Remove a directory
 help: Get syntax or argument help for commands.
 
-1.4 Forking and Cloning Reflection
+# 1.4 Forking and Cloning Reflection
 
 If you were going to write instructions for a new person on how to create a new repo, fork a repo, and clone a repo, what would they be? Why would you fork a repository as opposed to create a new one?
 
