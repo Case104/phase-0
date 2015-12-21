@@ -32,5 +32,5 @@ puts 60*24*365*8+(60*24*364*2)
 	This challenge was simple. It was good to get my mind back into the frame of ruby and out of HTML and CSS.
 
 [5.1](defining-variables.rb)
-[5.1](simple-string.rb)
-[5.1](basic-math.rb)
+[5.2](simple-string.rb)
+[5.3](basic-math.rb)
