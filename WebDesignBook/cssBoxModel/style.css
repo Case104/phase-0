@@ -1,0 +1,128 @@
+/*** CSS RESET ***/
+
+h1, h2, h3, body {
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	color: #2cf236; 
+	font-size: 2em; 
+	margin-bottom: 15px; 
+}
+html, body { 
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+}
+a {
+	color: #888;
+	text-decoration: none;
+}
+
+/*** BOX MODEL LAYOUT ***/
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body {
+	font-family: Arial, sans-serif;
+	color: #000;
+	background: #fff;
+}
+.grid-container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*** CLEARFIX ***/
+
+.row:before, .row:after {
+	content:"";
+	display: table ;
+	clear: both;
+}
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+	/* gutter */
+	padding: 15px;
+}
+
+/*** COLUMN WIDTHS ***/
+
+.col-1 {
+	width: 25%;
+}
+.col-2 {
+	width: 33.33%;
+}
+.col-3 {
+	width: 50%;
+}
+.col-4 {
+	width: 83.33%;
+}
+.col-5 {
+	width: 100%;
+}
+
+
+/*** OUTLINE ***/
+
+.outline, .outline *{
+	outline: 1px solid #ddd;
+}
+
+/*** P STYLES ***/
+
+[class*='col-'] > p {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	color: black;
+}
+
+/*** RESPONSIVE ***/
+
+@media all and (max-width: 800px) {
+	.col-1{width: 33.33%;}
+	.col-2{width: 50%;}
+	.col-3{width: 83.33%;}
+	.col-4{width: 100%;}
+	.col-5{width: 100%;}
+	.row .col-2:last-of-type{
+		width: 100%;
+	}
+	.row .col-5 ~ .col-1{
+		width: 100%;
+	}
+}
+@media all and (max-width: 650px) {
+	.col-1{width: 50%;}
+	.col-2{width: 100%;}
+	.col-3{width: 100%;}
+	.col-4{width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
