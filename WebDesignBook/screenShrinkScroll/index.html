@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="#">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<style>
+		.space{
+			height: 600px;
+		}
+		#shrink{
+			display: block;
+			margin: 0 auto;
+		}
+		</style>
+	</head>
+	<body>
+	<div class="space"></div>
+	<img id="shrink" src="profile.jpg" />
+	<div class="space"></div>
+	<div class="space"></div>
+	<script>
+	$(function(){
+		$(window).on('scroll', function() {
+			var scrollTop = $(this).scrollTop();
+			var topDistance = $('#shrink').offset().top;
+			if ( topDistance < scrollTop ) {
+				$('#shrink').animate({"width": 0, "height": 0}, 500);
+			}
+		});
+	});
+	</script>
+	</body>
+</html>
