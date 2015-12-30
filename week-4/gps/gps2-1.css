@@ -1,3 +1,32 @@
-body {
-	background-color: red;
+header{
+display: block;
+top: 0;
+left: 0;
+width: 100%;
+background-color: blue;
+text-align: center;
+padding: 5px;
+border: 1px solid black;
+}
+.column-1{
+  display: block;
+  position: relative;
+  float: left;
+  width: 50%;
+}
+.column-2{
+  display:block;
+  position:relative;
+  float:right;
+  width:50%;
+}
+footer{
+  display: block;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+  background-color: yellow;
+  position: relative;
+  height: 50px;
+  border: 1px solid black;
 }
