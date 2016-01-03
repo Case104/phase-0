@@ -20,7 +20,7 @@ describe 'total' do
     expect(total(array_2)).to eq 43
   end
 end
-
+=begin 
 describe 'sentence_maker' do
   let(:first_sentence) {["all", "my", "socks", "are", "dirty"]}
   let(:second_sentence) {["alaska", "has", "over", 586, "thousand", "miles"]}
@@ -41,3 +41,4 @@ describe 'sentence_maker' do
     expect(sentence_maker(second_sentence)).to eq "Alaska has over 586 thousand miles."
   end
 end
+=end

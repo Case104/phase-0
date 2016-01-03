@@ -4,10 +4,15 @@
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge with Kyle Zelman.
 
 # 0. total Pseudocode
 # make sure all pseudocode is commented out!
+
+# define method
+# method accepts array
+# each add to sum
+#return sum
 
 # Input:
 # Output:
@@ -15,6 +20,21 @@
 
 
 # 1. total initial solution
+
+def total(array)
+	sum = 0
+	array.each do |num|
+		sum += num
+	end
+	return sum
+end
+
+=begin	
+def total(array)
+ sum = 0
+  array.inject { |sum,num| sum + num }
+end
+=end
 
 
 
