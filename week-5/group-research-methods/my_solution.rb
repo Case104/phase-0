@@ -66,7 +66,6 @@ end
 # Thought about using an each method within an each method. 
 # Looked it up on google found a post which highlighted a pitfall with my method
 # Their solution does not account for the "I" being capital.
-numbers = [2, 4, 3, 1]
 
 def my_array_sorting_method(source)
   source.each_index do |first|
@@ -77,8 +76,6 @@ def my_array_sorting_method(source)
     end
   end
 end
-
- p my_array_sorting_method(numbers)
 
 # # When I feel like I don't understand a method, I run through it as if I were the computer and subsitute variables.
 
