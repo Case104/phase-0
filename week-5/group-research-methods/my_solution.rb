@@ -65,7 +65,7 @@ end
 # Hit a roadblock and method felt inefficient. Second attempt
 # Thought about using an each method within an each method. 
 # Looked it up on google found a post which highlighted a pitfall with my method
-# Their solution does not account for the "I" being capital.
+# DBC solution does not account for the "I" being capital.
 
 def my_array_sorting_method(source)
   source.each_index do |first|
@@ -173,7 +173,7 @@ end
 # array = [1, 2, 3 ,4]
 
 
-# In my_hash_sorting_method, I used .sort_by. You give the key and value conditional variable 
+# In my_hash_sorting_method, I used .sort_by. You give the key and value conditional variables, and then choose which one to sort by 
 
 
 # Person 4
