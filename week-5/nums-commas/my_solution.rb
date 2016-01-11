@@ -62,23 +62,23 @@
 # end
 
 
-def separate_comma(integer)
-	string_array = integer.to_s.split(//)
-	div3 = string_array.length / 3
-	number_of_commas = 1
-	if string_array.length % 3 == 0
-		counter = 1
-	else
-		counter = 0
-	end
-	until counter == div3
-		comma_placement = (-4 * number_of_commas)
-		string_array.insert(comma_placement, ",")
-		number_of_commas += 1
-		counter += 1
-	end
-	return string_array.join
-end
+# def separate_comma(integer)
+# 	string_array = integer.to_s.split(//)
+# 	div3 = string_array.length / 3
+# 	number_of_commas = 1
+# 	if string_array.length % 3 == 0
+# 		counter = 1
+# 	else
+# 		counter = 0
+# 	end
+# 	until counter == div3
+# 		comma_placement = (-4 * number_of_commas)
+# 		string_array.insert(comma_placement, ",")
+# 		number_of_commas += 1
+# 		counter += 1
+# 	end
+# 	return string_array.join
+# end
 
 # p separate_comma(100)
 # p separate_comma(1000)
@@ -123,6 +123,25 @@ end
 # I feel like a refactored version of my second solution would be 
 # more elegant, but I don't understand why it isn't working.
 
+# Got it to work! Refactored.
+
+def separate_comma(integer)
+	string_array = integer.to_s.split(//)
+	div3 = string_array.length / 3
+	number_of_commas = 1
+	if string_array.length % 3 == 0
+		counter = 1
+	else
+		counter = 0
+	end
+	until counter == div3
+		comma_placement = (-4 * number_of_commas)
+		string_array.insert(comma_placement, ",")
+		number_of_commas += 1
+		counter += 1
+	end
+	return string_array.join
+end
 
 
 # 3. Reflection
