@@ -34,38 +34,57 @@
 # string_array = integer.to_s.split(//)
 # div3 = array.length / 3
 
+# def separate_comma(integer)
+# 	string_array = integer.to_s.split(//)
+# 	if string_array.length % 3 == 0
+# 		div3 = string_array.length / 3
+# 		counter = 1
+# 		num = 1
+# 		until counter == div3
+# 			comma_placement = (-4 * num)
+# 			string_array.insert(comma_placement, ",")
+# 			num += 1
+# 			counter += 1
+# 		end
+# 		return string_array.join
+# 	else
+# 		div3 = string_array.length / 3
+# 		counter = 0
+# 		num = 1
+# 		until counter == div3
+# 			comma_placement = (-4 * num)
+# 			string_array.insert(comma_placement, ",")
+# 			num += 1
+# 			counter += 1
+# 		end
+# 		return string_array.join
+# 	end
+# end
+
+
 def separate_comma(integer)
 	string_array = integer.to_s.split(//)
+	div3 = string_array.length / 3
+	number_of_commas = 1
 	if string_array.length % 3 == 0
-		div3 = string_array.length / 3
 		counter = 1
-		num = 1
-		until counter == div3
-			comma_placement = (-4 * num)
-			string_array.insert(comma_placement, ",")
-			num += 1
-			counter += 1
-		end
-		return string_array.join
 	else
-		div3 = string_array.length / 3
 		counter = 0
-		num = 1
-		until counter == div3
-			comma_placement = (-4 * num)
-			string_array.insert(comma_placement, ",")
-			num += 1
-			counter += 1
-		end
-		return string_array.join
 	end
+	until counter == div3
+		comma_placement = (-4 * number_of_commas)
+		string_array.insert(comma_placement, ",")
+		number_of_commas += 1
+		counter += 1
+	end
+	return string_array.join
 end
 
-p separate_comma(100)
-p separate_comma(1000)
-p separate_comma(10000)
-p separate_comma(100000)
-p separate_comma(1000000)
+# p separate_comma(100)
+# p separate_comma(1000)
+# p separate_comma(10000)
+# p separate_comma(100000)
+# p separate_comma(1000000)
 
 
 # def separate_comma(integer)
