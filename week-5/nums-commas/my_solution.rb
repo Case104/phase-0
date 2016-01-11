@@ -36,51 +36,86 @@
 
 # def separate_comma(integer)
 # 	string_array = integer.to_s.split(//)
-# 	div3 = string_array.length / 3
-# 	counter = 0
-# 	until counter == div3
+# 	if string_array.length % 3 == 0
+# 		div3 = string_array.length / 3
+# 		counter = 1
 # 		num = 1
-# 		x = 0
-# 		comma_placement = -4 * num + x
-# 		string_array.insert(comma_placement, ",")
-# 		num += 1
-# 		x += 1
-# 		counter += 1
+# 		until counter == div3
+# 			comma_placement = (-4 * num)
+# 			string_array.insert(comma_placement, ",")
+# 			num += 1
+# 			counter += 1
+# 		end
+# 		return string_array.join
+# 	else
+# 		div3 = string_array.length / 3
+# 		counter = 0
+# 		num = 1
+# 		until counter == div3
+# 			comma_placement = (-4 * num)
+# 			string_array.insert(comma_placement, ",")
+# 			num += 1
+# 			counter += 1
+# 		end
+# 		return string_array.join
 # 	end
-# 	return string_array.join
 # end
 
-# p separate_comma(100000000)
 
 def separate_comma(integer)
 	string_array = integer.to_s.split(//)
-	string_length = string_array.length
-	div3 = string_length / 3
-
-	if string_length < 4
-		integer = integer.to_s
-	elsif string_length % 3 == 1
-		comma_placement = 1
-		div3.times do
-			string_array.insert(comma_placement, ",")
-			comma_placement += 4
-		end
-	elsif string_length % 3 == 2
-		comma_placement = 2
-		div3.times do
-			string_array.insert(comma_placement, ",")
-			comma_placement += 4
-		end
-	elsif string_length % 3 == 0
-		comma_placement = 3
-		div3 -= 1
-		div3.times do
-			string_array.insert(comma_placement, ",")
-			comma_placement += 4
-		end
+	div3 = string_array.length / 3
+	number_of_commas = 1
+	if string_array.length % 3 == 0
+		counter = 1
+	else
+		counter = 0
+	end
+	until counter == div3
+		comma_placement = (-4 * number_of_commas)
+		string_array.insert(comma_placement, ",")
+		number_of_commas += 1
+		counter += 1
 	end
 	return string_array.join
 end
+
+# p separate_comma(100)
+# p separate_comma(1000)
+# p separate_comma(10000)
+# p separate_comma(100000)
+# p separate_comma(1000000)
+
+
+# def separate_comma(integer)
+# 	string_array = integer.to_s.split(//)
+# 	string_length = string_array.length
+# 	div3 = string_length / 3
+
+# 	if string_length < 4
+# 		integer = integer.to_s
+# 	elsif string_length % 3 == 1
+# 		comma_placement = 1
+# 		div3.times do
+# 			string_array.insert(comma_placement, ",")
+# 			comma_placement += 4
+# 		end
+# 	elsif string_length % 3 == 2
+# 		comma_placement = 2
+# 		div3.times do
+# 			string_array.insert(comma_placement, ",")
+# 			comma_placement += 4
+# 		end
+# 	elsif string_length % 3 == 0
+# 		comma_placement = 3
+# 		div3 -= 1
+# 		div3.times do
+# 			string_array.insert(comma_placement, ",")
+# 			comma_placement += 4
+# 		end
+# 	end
+# 	return string_array.join
+# end
 
 
 # 2. Refactored Solution
