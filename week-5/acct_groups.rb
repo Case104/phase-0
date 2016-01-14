@@ -38,22 +38,22 @@ end
 
 # REFACTOR:
 
-def form_groups(list)
-	list_array = list.split(", ")
-	list_length = list_array.length
-	if list_length <= 5
-		return list_array
-	else
-		list_array.shuffle!
-		if list_length % 5 == 0 || list_length % 5 == 4 || list_length % 5 == 3
-			return list_array.each_slice(5).to_a
-		elsif list_length % 4 == 0 || list_length % 4 == 3
-			return list_array.each_slice(4).to_a
-		elsif list_length % 3 == 0
-			return list_array.each_slice(3).to_a
-		end
-	end
-end
+# def form_groups(list)
+# 	list_array = list.split(", ")
+# 	list_length = list_array.length
+# 	if list_length <= 5
+# 		return list_array
+# 	else
+# 		list_array.shuffle!
+# 		if list_length % 5 == 0 || list_length % 5 == 4 || list_length % 5 == 3
+# 			return list_array.each_slice(5).to_a
+# 		elsif list_length % 4 == 0 || list_length % 4 == 3
+# 			return list_array.each_slice(4).to_a
+# 		elsif list_length % 3 == 0
+# 			return list_array.each_slice(3).to_a
+# # 		end
+# # 	end
+# end
 
 =begin
 I'm way behind this week so I don't have enough time to refactor all of my solutions. That being said, I would probably use a switch statement (case) for my if and elsif conditions. I have no "else" so case would most likely work better. I would also try to think of a way to solve for numbers like 17 and 22, which do not meet any of the current criteria. I believe I can keep the same line of thought and figure out a solution for thise numbers.
