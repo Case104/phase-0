@@ -73,5 +73,11 @@ end
 #   end
 # end
 
-
+# REFLECTION: 
+# What are some general rules you can apply to nested arrays?
+# 	They can be confusing to access, so try to use them sparingly. I found it easier to access something within an array nested within an array, rather than arrays and hashes intermixed.
+# What are some ways you can iterate over nested arrays?
+# 	We used both map and each to iterate over.
+# Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+# 	we used map and .each. I feel like I don't have a firm understanding of the differences between them, but I have used map often at this point.
 

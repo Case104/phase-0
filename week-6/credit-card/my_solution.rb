@@ -1,8 +1,8 @@
 # Class Warfare, Validate a Credit Card Number
 
 
-# I worked on this challenge [by myself, with: ].
-# I spent [#] hours on this challenge.
+# I worked on this challenge with Prince.
+# I spent [1.35] hours on this challenge.
 
 # Pseudocode
 
@@ -95,3 +95,12 @@ end
 
 
 # Reflection
+
+# What was the most difficult part of this challenge for you and your pair?
+#   At first, we had too many methods, and went a few steps further than we had to to solve it.
+# What new methods did you find to help you when you refactored?
+#   When we refactored, we added .inject to add our totals. I understand what .select.each_with_index does, but I don't understand how it does it.
+# What concepts or learnings were you able to solidify in this challenge?
+#   I loved this challenge. I had a great pair and we knocked it out quickly and efficiently. I felt like I really understood how split, join, and inject work. I don't see the difference between map and each yet.
+
+
