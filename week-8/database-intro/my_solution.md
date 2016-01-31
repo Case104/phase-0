@@ -14,4 +14,4 @@ How can you select information out of a SQL database? What are some general guid
 
 Yes, command in SQL are stacked until a semicolon is presented. Your basic methods are SELECT, FROM, ORDER BY, INNER JOIN, WHERE.
 
-![schema.png]
+![schema](schema.png)
