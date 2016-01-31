@@ -1,6 +1,6 @@
 Here I used a one to one schema to show that Beth only ever wears skirts. Since the others may or may not wear skirts, resulting in a null value, and Beth always wears them, a one to one schema is warranted.
 
-(../imgs/onetoone.png)
+![onetoone](../imgs/onetoone.png)
 
 What is a one-to-one database?
 
@@ -22,4 +22,4 @@ What is confusing about database schemas? What makes sense?
 
 Many to many seems inefficient, I would imagine that you would want to create as many one to many relationships as possible. I would say when to use one to one and many to many is the most confusion part.
 
-(../imgs/manytomany.png)
+![manytomany](../imgs/manytomany.png)
