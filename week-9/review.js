@@ -60,18 +60,30 @@ function leapYear(year) {
 // 	return string_array.join
 // end
 
+// function separateComma(integer) {
+// 	var stringArray = integer.toString().split('');
+// 	var div3 = stringArray.length / 3;
+// 	var numberOfCommas = 1;
+// 	var counter = 1;
+// 	var i = -3;
+// 	while ( counter < div3 ) {
+// 		var placement = ( i * numberOfCommas);
+// 		stringArray.splice(placement, 0, ',');
+// 		numberOfCommas += 1;
+// 		counter += 1;
+// 		console.log(i);
+// 		if ( i > -4) { i = -4; }
+// 	}
+// 	return stringArray.join('');
+// }
+
 function separateComma(integer) {
 	var stringArray = integer.toString().split('');
-	var div3 = stringArray.length / 3
-	var numberOfCommas = 1
-	var counter = 0
-	if ( stringArray.length % 3 == 0 ) { counter = 1 };
-	do {
-		var placement = ( -3 * numberOfCommas)
-		stringArray.splice(placement, 0, ',')
-		numberOfCommas += 1
-		counter += 1
-	} while ( counter > div3 );
+	var index = -3;
+	while ( stringArray.length + index > 0 ) {
+		stringArray.splice(index, 0, ',');
+		index -= 4;
+	}
 	return stringArray.join('');
 }
 
@@ -84,8 +96,8 @@ console.log(separateComma(1000));
 // What was the most difficult part of this challenge?
 // 	I looked up the methods for syntax purposes, but otherwise seemed pretty fine.
 // Did you solve the problem in a new way this time?
-// 	I did not, I used the same logic.
+// I did for the third one. I realized how convoluted my original logic was, and rewrote it.
 // Was your pseudocode different from the Ruby version? What was the same and what was different?
-// 	It varied only slightly so I used the same logic and methods as I used in ruby.
+// 	It varied only slightly so I used the same general logic and methods as I used in ruby.
 
 
